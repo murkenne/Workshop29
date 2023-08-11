@@ -11,15 +11,13 @@ function NewPlayerForm() {
 
     const newPlayerData = {
       name,
-      age: parseInt(age, 10), // Convert age to a number
+      age: parseInt(age, 10),
       position,
     };
 
     try {
       const newPlayer = await createNewPlayer(newPlayerData);
       console.log('New player created:', newPlayer);
-      // You can perform any further actions after the successful creation of a new player
-      // For example, you can redirect the user to the player's details page
     } catch (err) {
       console.error('Error creating a new player:', err);
     }
