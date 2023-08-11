@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* App.css */
+
+
+#container {
+  max-width: 1400px; /* Adjust the width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color:rgb(232, 132, 9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+#container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgb(232, 132, 9);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+/* ... other styles ... */
+
+.all-players {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2; /* Ensure it's above the container */
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: gold;
+  padding: 15px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin: 0 15px; /* Add margin to create space between links */
+}
+
+#navbar a:hover {
+  color: #007bff;
+}
+
+/* home.css */
+img {
+  max-width: 300px; /* Adjust the width as per your requirement */
+}
+
+.new-player {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2; /* Ensure it's above the container */
+}
+
+.single-player {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2; /* Ensure it's above the container */
+}
+
+
+
+
