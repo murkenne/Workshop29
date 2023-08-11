@@ -9,7 +9,7 @@
 
 
 #container {
-  max-width: 1400px; /* Adjust the width as needed */
+  max-width: 1400px; 
   margin: 0 auto;
   padding: 20px;
   background-color:rgb(232, 132, 9);
@@ -41,7 +41,7 @@
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 2; /* Ensure it's above the container */
+  z-index: 2;
 }
 
 #navbar {
@@ -55,7 +55,7 @@
   text-decoration: none;
   color: #333;
   font-size: 18px;
-  margin: 0 15px; /* Add margin to create space between links */
+  margin: 0 15px; 
 }
 
 #navbar a:hover {
@@ -64,7 +64,7 @@
 
 /* home.css */
 img {
-  max-width: 300px; /* Adjust the width as per your requirement */
+  max-width: 300px;
 }
 
 .new-player {
@@ -74,7 +74,7 @@ img {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 2; /* Ensure it's above the container */
+  z-index: 2; 
 }
 
 .single-player {
@@ -84,7 +84,7 @@ img {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 2; /* Ensure it's above the container */
+  z-index: 2; 
 }
 
 
