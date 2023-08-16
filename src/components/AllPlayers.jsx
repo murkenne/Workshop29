@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchAllPlayers } from './ajaxHelpers';
 import SearchBar from './SearchBar'; // Import the SearchBar component
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 
 function AllPlayers() {
   const [players, setPlayers] = useState([]);
@@ -24,6 +25,8 @@ function AllPlayers() {
     fetchData();
   }, []);
 
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
   const filterPlayers = (searchText) => {
     const filtered = players.filter(player =>
       player.name.toLowerCase().includes(searchText.toLowerCase())
@@ -32,7 +35,7 @@ function AllPlayers() {
   };
 
   const openPlayerDetails = (playerId) => {
-    window.open(`/players/${playerId}`, '_blank'); // Open in a new tab/window
+    navigate(`/players/${playerId}`); // Use the navigate function to navigate to the player details
   };
 
   if (loading) {
